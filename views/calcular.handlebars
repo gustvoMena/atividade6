@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Calcular IPVA do carro</h2>
+
+         Valor Do carro <input class="form-control"id="num1" > </label>
+   
+        
+
+<br>
+
+<div class=>
+    <label for="staticEmail" class="col-sm-2 col-form-label">alíquota  De SC</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext"  id="num2" value="0.02"  >
+    </div>
+<br>
+
+   <button   class="btn btn-primary"  onclick= "Somar()" > Somar</button>
+   <br>
+   
+   <p    id="result">     </p>
+   
+  
+ 
+   <script> 
+      function Somar () {
+           var numero1 =   Number(document.getElementById("num1").value)
+           var numero2 =   Number(document.getElementById("num2").value)
+           var soma = numero1 * numero2
+       
+           //velando para o html
+   
+       document.getElementById("result").innerText ="Esse eh o valor do IPVA do carro Sem desconto : "+ soma
+   
+   }
+      
+
+
+</script>
+</body>
+</html>
+<a href="/"> Voltar</a>
+
